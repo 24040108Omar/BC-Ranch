@@ -30,7 +30,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.9rem 5%;
+  padding: 1.25rem 5%;
   z-index: 1000;
   box-shadow: 0 2px 12px rgba(0, 0, 0, .25);
 }
@@ -38,7 +38,7 @@ body {
 .brand {
   font-family: "Cinzel Decorative", serif;
   font-weight: 400;
-  font-size: 1.65rem;
+  font-size: 1.9rem;
   letter-spacing: .02em;
   color: var(--bleached-bone);
   text-decoration: none;
@@ -58,7 +58,7 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.2rem;
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
@@ -66,11 +66,11 @@ body {
 .nav-links a {
   color: var(--bleached-bone);
   text-decoration: none;
-  font-size: .88rem;
+  font-size: .98rem;
   font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
-  padding: .35rem 0;
+  padding: .45rem 0;
   border-bottom: 2px solid transparent;
   transition: color .2s, border-color .2s;
   white-space: nowrap;
@@ -83,10 +83,10 @@ body {
 }
 
 /* ---------- SECCIONES ---------- */
-main { padding-top: 68px; }
+main { padding-top: 84px; }
 
 section {
-  scroll-margin-top: 76px;
+  scroll-margin-top: 92px;
   padding: 5rem 5% 5.5rem;
 }
 
@@ -122,7 +122,7 @@ h3 {
 p { max-width: 680px; font-size: 1.05rem; }
 
 .hero {
-  min-height: calc(100vh - 68px);
+  min-height: calc(100vh - 84px);
   display: flex;
   align-items: center;
   background: linear-gradient(180deg, var(--bleached-bone) 0%, var(--tumbleweed) 140%);
@@ -199,8 +199,8 @@ footer .brand { font-size: 1.3rem; }
 footer p { margin: .6rem auto 0; font-size: .9rem; opacity: .85; }
 
 @media (max-width: 720px) {
-  .navbar { flex-wrap: wrap; padding: .8rem 4%; }
-  .brand { font-size: 1.4rem; }
+  .navbar { flex-wrap: wrap; padding: 1rem 4%; }
+  .brand { font-size: 1.6rem; }
   .nav-toggle { display: block; }
 
   .nav-links {
@@ -213,10 +213,10 @@ footer p { margin: .6rem auto 0; font-size: .9rem; opacity: .85; }
   }
 
   .nav-links.open { display: flex; }
-  .nav-links a { font-size: .85rem; }
+  .nav-links a { font-size: .92rem; }
 
-  main { padding-top: 64px; }
-  section { scroll-margin-top: 72px; }
+  main { padding-top: 72px; }
+  section { scroll-margin-top: 80px; }
   .hero .brand-hero { font-size: 2.4rem; }
   h2 { font-size: 1.8rem; }
   .cards { grid-template-columns: 1fr; }
