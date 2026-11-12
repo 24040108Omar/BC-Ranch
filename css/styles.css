@@ -329,7 +329,7 @@ footer p { margin: .6rem auto 0; font-size: .9rem; opacity: .85; }
   margin-bottom: .5rem;
 }
 
-.catalogo-wrap { max-width: 1400px; }
+.catalogo-wrap { max-width: 1150px; }
 
 .catalogo-grupo {
   font-family: "Montserrat", sans-serif;
@@ -353,7 +353,7 @@ footer p { margin: .6rem auto 0; font-size: .9rem; opacity: .85; }
   width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 16px;
   background: #fff;
 }
