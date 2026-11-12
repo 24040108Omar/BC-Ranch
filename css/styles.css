@@ -11,6 +11,8 @@
 
 html { scroll-behavior: smooth; }
 
+html, body { overflow-x: clip; }
+
 body {
   font-family: "Inter Tight", "Montserrat", Arial, sans-serif;
   background: var(--bleached-bone);
@@ -288,6 +290,18 @@ footer {
 footer .brand { font-size: 1.3rem; }
 
 footer p { margin: .6rem auto 0; font-size: .9rem; opacity: .85; }
+
+/* ---------- TABLET (721–1024px) ---------- */
+@media (max-width: 1024px) {
+  .navbar { padding: 1.1rem 4%; }
+  .brand { font-size: 1.7rem; }
+  .nav-links { gap: 1.4rem; }
+  .nav-links a { font-size: .9rem; }
+  .hero-text { padding: 3rem 2rem 3rem 4%; }
+  section { padding: 4rem 4% 4.5rem; }
+  .catalogo { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
 
 @media (max-width: 720px) {
   .navbar { flex-wrap: wrap; padding: 1rem 4%; }
