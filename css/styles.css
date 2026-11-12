@@ -125,19 +125,90 @@ p { max-width: 680px; font-size: 1.05rem; }
   min-height: calc(100vh - 84px);
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, var(--bleached-bone) 0%, var(--tumbleweed) 140%);
+  overflow: hidden;
+  background:
+    radial-gradient(55% 75% at 78% 50%, rgba(216, 235, 249, .35) 0%, rgba(216, 235, 249, 0) 62%),
+    radial-gradient(45% 60% at 85% 45%, rgba(214, 158, 92, .18) 0%, rgba(214, 158, 92, 0) 70%),
+    linear-gradient(100deg, var(--bleached-bone) 0%, #e9dfc8 48%, var(--tumbleweed) 100%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 3rem;
+  align-items: center;
 }
 
 .hero .brand-hero {
   font-family: "Cinzel Decorative", serif;
   font-weight: 400;
-  font-size: 3.4rem;
-  line-height: 1.1;
+  font-size: clamp(3rem, 6vw, 4.8rem);
+  line-height: 1.05;
   color: var(--rawhide);
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
-.hero p { font-size: 1.15rem; margin-bottom: 1.8rem; }
+.hero .slogan {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--rawhide);
+  margin-bottom: 1rem;
+  max-width: 520px;
+}
+
+.hero .hero-lead {
+  font-size: 1.12rem;
+  margin-bottom: 1.8rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: .8rem;
+  flex-wrap: wrap;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--rawhide);
+  border: 2px solid var(--rawhide);
+}
+
+.btn-ghost:hover {
+  background: var(--rawhide);
+  color: var(--bleached-bone);
+}
+
+.hero-media {
+  margin: 0;
+  position: relative;
+}
+
+.hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: 20px;
+  background:
+    linear-gradient(90deg, var(--bleached-bone) 0%, rgba(244, 241, 226, 0) 26%),
+    linear-gradient(0deg, rgba(81, 50, 41, .14) 0%, rgba(81, 50, 41, 0) 30%);
+  pointer-events: none;
+}
+
+.hero-media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 860 / 573;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 24px 32px rgba(81, 50, 41, .25);
+  filter: saturate(1.05) contrast(1.02);
+}
 
 .btn {
   display: inline-block;
@@ -217,7 +288,9 @@ footer p { margin: .6rem auto 0; font-size: .9rem; opacity: .85; }
 
   main { padding-top: 72px; }
   section { scroll-margin-top: 80px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .hero .brand-hero { font-size: 2.4rem; }
+  .hero-media img { max-width: 560px; margin: 0 auto; }
   h2 { font-size: 1.8rem; }
   .cards { grid-template-columns: 1fr; }
 }
