@@ -137,7 +137,7 @@ p { max-width: 680px; font-size: 1.05rem; }
 }
 
 .hero .wrap {
-  max-width: 1500px;
+  max-width: 1760px;
 }
 
 .hero-grid {
@@ -214,6 +214,8 @@ p { max-width: 680px; font-size: 1.05rem; }
   z-index: 1;
   display: block;
   width: 100%;
+  max-width: 860px;
+  margin-left: auto;
   height: auto;
   aspect-ratio: 860 / 573;
   object-fit: cover;
