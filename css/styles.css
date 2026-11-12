@@ -132,9 +132,17 @@ p { max-width: 680px; font-size: 1.05rem; }
     linear-gradient(100deg, var(--bleached-bone) 0%, #e9dfc8 48%, var(--tumbleweed) 100%);
 }
 
+.hero {
+  padding: 4rem 5%;
+}
+
+.hero .wrap {
+  max-width: 1500px;
+}
+
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.05fr .95fr;
+  grid-template-columns: 1fr .96fr;
   gap: 3rem;
   align-items: center;
 }
