@@ -209,7 +209,7 @@ p { max-width: 680px; font-size: 1.05rem; }
   z-index: 2;
   border-radius: 0;
   background:
-    linear-gradient(90deg, var(--bleached-bone) 0%, rgba(244, 241, 226, .55) 12%, rgba(244, 241, 226, 0) 34%),
+    linear-gradient(90deg, #e9dfc8 0%, rgba(233, 223, 200, .55) 12%, rgba(233, 223, 200, 0) 34%),
     linear-gradient(0deg, rgba(81, 50, 41, .14) 0%, rgba(81, 50, 41, 0) 30%);
   pointer-events: none;
 }
